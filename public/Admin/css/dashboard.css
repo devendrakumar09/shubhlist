@@ -1,0 +1,68 @@
+.add-Tag{
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.add-Tag .card-heading{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fd4040
+}
+.add-Tag .card-text{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff
+}
+
+.quick-card{
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+
+.quick-card .card-heading {
+    font-size: 22px;
+    color: #464e56;
+    font-weight: 600;
+    text-align: left
+}
+
+.card-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: #868e94;
+    text-align: left
+}
+
+
+
+/**USER PROFILR */
+.user-profile .image{  
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-profile .image>img{
+  height: 100%;
+  width: 100%;
+}
+.user-profile .profile-info .profile-text span{
+  font-size: 11px;
+  font-weight: bolder;
+}
+
+.user-profile .profile-info .profile-text{
+  font-size: 15px;
+  margin-top: -10px;
+}

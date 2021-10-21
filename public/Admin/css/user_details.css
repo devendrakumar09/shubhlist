@@ -1,0 +1,26 @@
+
+.profile-info p{
+    margin-top: -20px;
+}
+
+
+/**USER PROFILR */
+.user-profile .image{  
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-profile .image>img{
+  height: 100%;
+  width: 100%;
+}
+.user-profile .profile-info .profile-text span{
+  font-size: 11px;
+  font-weight: bolder;
+}
+
+.user-profile .profile-info .profile-text{
+  font-size: 15px;
+  margin-top: -10px;
+}

@@ -1,0 +1,265 @@
+.about_page .nb-page-title-wrap {
+    padding-top: 280px;
+    padding-bottom: 250px;
+    margin-bottom: 75px;
+}
+.about_page .nb-page-title-wrap h1 {
+font-size: 36px;
+    text-transform: uppercase;
+    color: #323232;
+    font-family: Federo;
+    font-weight: 400;
+    margin-bottom: 15px;
+    clear: both;
+    line-height: 1.7;
+}
+.about_page .nb-page-title-wrap nav {
+    text-transform: uppercase;
+    color: #323232;
+	font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.about_page .nb-page-title-wrap nav a{
+    color: #323232;
+}
+
+/*---------------------------About Us------------------------------------*/
+.about-section_1 {
+    padding: 0 0 60px;
+    position: relative;
+    overflow: hidden;
+}
+.about-section_1 .about-s {}
+.about-section_1 .about-s h2{font-weight: normal;
+    color: #333333;
+    margin-bottom: 2px;
+	font-family: 'Federo';
+    font-size: 24px;}
+.about-section_1 .about-s h2 span{    font-size: 54px;}
+.uvc-heading-spacer {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section_1 .text {    margin-top: 16px;
+    margin-bottom: 35px;}
+.about-section_1 .text p{    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #333333;}
+	.new-btn-css {
+    margin-bottom: 30px;
+}
+	.new-btn-css a {
+    font-weight: normal;
+    width: 142px;
+    min-height: 44px;
+    padding: 10px 25px;
+    border-radius: 0px;
+    border-width: 1px;
+    border-color: rgb(51, 51, 51);
+    border-style: solid;
+    background: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    display: block;
+    }
+	.new-btn-css a:hover{background: linear-gradient(to right, rgb(229 52 52) 0%,rgb(235 164 12) 100%);
+    color: #fff;
+    border: 1px solid #eb9e0f;}
+/*---------------------------About Us------------------------------------*/
+
+/*---------------------------team------------------------------------*/
+
+.team-section {}
+.team-section .all-title{
+    text-align: center;
+}
+.team-section .all-title h2 span {
+    font-size: 54px;
+}
+.team-section .all-title h2{    font-weight: normal;
+    color: #333333;
+    margin-bottom: 2px;
+    font-family: 'Federo';
+    font-size: 24px;
+    text-transform: uppercase;}
+.team-section .all-title p{
+width: 80%;
+    margin: 0 auto;
+    font-weight: normal;
+    color: #333333;
+    margin-top: 18px;
+    margin-bottom: 37px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: Poppins;
+}
+#vc-our-team {
+    text-align: center;
+}
+#vc-our-team .our-thumbnail {
+    position: relative;
+}
+
+element.style {
+}
+#vc-our-team .our-thumbnail .ourteam-social-share {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+#vc-our-team .our-thumbnail .ourteam-social-share a:not(:last-child) {
+    margin-right: 21px;
+}
+#vc-our-team .our-thumbnail .ourteam-social-share a {
+    color: #fff;
+    font-size: 20px;
+    transition: .5s;
+}
+#vc-our-team .our-info {
+    padding: 5px 20px;
+}
+#vc-our-team .our-info .caption {
+    margin-top: 18px;
+    margin-bottom: 3px;
+	font-family: Federo;
+    font-weight: 400;
+    color: #444;
+	    font-size: 20px;
+}
+#vc-our-team .our-info .occupations {
+    margin-bottom: 15px;
+	font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
+}
+#vc-our-team .our-info .description {    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;}
+	#vc-our-team .our-thumbnail:hover .ourteam-social-share {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*---------------------------team------------------------------------*/
+/*---------------------------about-contact-news------------------------------------*/
+.about-contact-news {    padding: 160px 0;}
+.about-contact-news .all-title{
+    text-align: center;
+}
+.about-contact-news .all-title h2 span {
+    font-size: 54px;
+}
+.about-contact-news .all-title h2{    font-weight: normal;
+    color: #333333;
+    margin-bottom: 2px;
+    font-family: 'Federo';
+    font-size: 24px;
+    text-transform: uppercase;}
+.about-contact-news .all-title p{
+width: 50%;
+    margin: 0 auto;
+    font-weight: normal;
+    color: #333333;
+    margin-top: 18px;
+    margin-bottom: 37px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: Poppins;
+}
+.contact-about-us {
+    max-width: 555px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.contact-about-us span.your-email {
+    display: block;
+}
+.wpcf7-form-control-wrap {
+    position: relative;
+}
+.contact-about-us span.your-email input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    outline: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding: 5px 15px;
+	    color: #666;
+}
+.contact-about-us span.your-email:after {
+    position: absolute;
+    content: '\f178';
+    font-family: 'FontAwesome';
+    font-size: 24px;
+    right: 15px;
+    top: 0;
+    height: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.contact-about-us > input {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 30px;
+    color: transparent;
+    border: none;
+    outline: none;
+}
+/*---------------------------about-contact-news------------------------------------*/
+/*--------------------small-pics-----------------------*/
+.small-pics {
+}
+.small-pics ul {
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+.small-pics ul li {
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+.small-pics ul li img{}
+.small-pics ul li img:hover{
+    transition: .5s;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*--------------------small-pics-----------------------*/
