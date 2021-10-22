@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Auth\SocialController;
+use App\Http\Controllers\Auth\LoginController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +30,17 @@ Route::group(['namespace' => 'Template', ],function(){
     Route::get('/invi/birthday/{slug}','InvitationController@invite')->name('invite');
 });
 
+
+
+Route::get('login/{service}', [LoginController::class, 'redirectToProvider'])->name('sociallogin');
+
+Route::get('login/{service}/callback', [LoginController::class, 'handleProviderCallback'])->name('social.login.callback');
+
+
+
+Route::get('login/google', [LoginController::class, 'redirectToGoogle']);
+
+
 /**-----------------User Dashboard------------------------- */
 Route::group(['namespace' => 'UserDash', 'prefix'=>'u', 'middleware' => ['auth','adminRedirect'] ],function(){
     Route::get('dashboard','UserDashboardController@index')->name('user-dashboard');
@@ -36,6 +48,10 @@ Route::group(['namespace' => 'UserDash', 'prefix'=>'u', 'middleware' => ['auth',
     Route::post('update-profile','ProfileController@update')->name('update-user-profile'); 
 
     Route::resource('/my-invitations','InvitationController');
+});
+
+Route::get('link-storage', function (){
+    \Illuminate\Support\Facades\Artisan::call('storage:link');    
 });
 
 
@@ -61,16 +77,9 @@ Route::group(['namespace' => 'Admin', 'prefix'=>'iw', 'middleware'=>['auth','adm
 
 });
 
-Route::get('link-storage', function (){
-    \Illuminate\Support\Facades\Artisan::call('storage:link');    
-});
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 
-
-Route::get('redirect', 'Auth\SocialController@redirect');
-Route::get('callback', 'Auth\SocialController@callback');

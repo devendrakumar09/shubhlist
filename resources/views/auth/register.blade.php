@@ -65,8 +65,8 @@
 
                                 
                                 <div class="form-group text-right">
-                                    <a class="btn btn-primary" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                    <button type="submit" class="btn btn-primary">
+                                    <a  href="{{ route('login') }}">Already Account Please Login</a>
+                                    <button type="submit" class="btn btn-danger">
                                             {{ __('Register') }}
                                     </button>
                                 </div>

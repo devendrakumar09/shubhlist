@@ -9,13 +9,13 @@
 .login-container .card {
     border: none;
     border-radius: 10px;
-    background-color: #4270C8;    
-    margin-top: -60px
+    background: rgb(235 164 12);    
+    
 }
 
 .login-container p.mb-1 {
     font-size: 25px;
-    color: #9FB7FD
+    
 }
 
 .login-container .btn-primary {
@@ -76,7 +76,6 @@
 .login-container .btn-block {
     border: none;
     border-radius: 8px;
-    background-color: #506CCF;
     padding: 10px 0 12px
 }
 
@@ -145,25 +144,28 @@
     <div class="row d-flex justify-content-center">
         <div class="col-sm-6 mx-auto">
             <div class="d-flex flex-column justify-content-between ">
+                
                 <div class="card mt-3 border shadow">
                     <div class="logo mb-3"><img src=" "></div>
                     <div class="p-4">
                         <p class="mb-1">Start managing your</p>
                         <h4 class="mb-5 text-white">Invitations with us!</h4>
                     </div> 
-                    <button class="btn btn-primary btn-lg"><small>Not a member?</small>
+                    <button class="btn btn-danger btn-lg"><small>Not a member?</small>
                         <span>&nbsp;<a href="{{ route('register') }}" class="text-white font-weight-bolder">SIGNUP</a></span> 
                     </button>
                 </div>
+                
                 <div class="card two bg-white px-5 py-4 mb-3">                    
-                    <a class="btn btn-danger btn-block continue facebook-button  justify-content-start align-items-center"> 
+                    <a class="btn btn-danger btn-block continue facebook-button  justify-content-start align-items-center" href="{{ route('sociallogin','facebook') }}" title="{{__('staticwords.SignInwithFacebook')}}"> 
                         <i class="fa fa-facebook ml-2"></i> 
-                        <span class="ml-5 px-4 text-white">Continue with facebook</span> 
+                        <span class="ml-5  text-white">Continue with facebook</span> 
                     </a> 
-                    <a href="{{ url('/redirect') }}" class="btn btn-danger btn-block continue google-button  justify-content-start align-items-center"> 
+                    <a class="btn btn-danger btn-block continue google-button  justify-content-start align-items-center"  title="{{_('staticwords.SignInwithGoogle')}}" href="{{ route('sociallogin','google') }}"> 
                         <i class="fa fa-google ml-2"></i> 
-                        <span class="ml-5 px-4 text-white">Continue with Google</span> 
+                        <span class="ml-5  text-white">Continue with Google</span> 
                     </a>
+                    
                     <form method="POST" action="{{ route('login') }}" class="mt-5">
                         @csrf
                         <div class="form-group">
@@ -191,7 +193,7 @@
                                     </a>
                                 @endif
                         </div> 
-                        <button class="btn btn-primary btn-block btn-lg mt-1 mb-2">
+                        <button class="btn btn-danger btn-block btn-lg mt-1 mb-2">
                             <span>Get started<i class="fas fa-long-arrow-alt-right ml-2"></i></span>
                         </button>
                     </form>
